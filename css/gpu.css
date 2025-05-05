@@ -1,0 +1,279 @@
+@font-face {
+  font-family: "ShareTechMono";
+  src: url("../fonts/ShareTechMonoRegular-0.0.otf") format("opentype");
+}
+@font-face {
+  font-family: "BlackOpsOne";
+  src: url("../fonts/BlackOpsOne-Regular_RUS_by_alince.otf") format("opentype");
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  min-height: 90px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 0;
+  padding-bottom: 10px;
+  transition: border-color 0.3s ease;
+}
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(217, 127, 235);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+header:hover::after {
+  height: 3px;
+  background-color: rgb(226, 139, 232);
+}
+header h1 {
+  font-size: 45px;
+  color: #000000;
+  position: absolute;
+  left: 150px;
+  top: -10px;
+  margin-bottom: -50px;
+  font-family: "ShareTechMono", monospace;
+}
+header h1 a {
+  color: #000000;
+  text-decoration: none;
+}
+header img {
+  position: absolute;
+  left: 45px;
+  margin-top: -24px;
+  height: auto;
+  width: 100px;
+  float: left;
+}
+
+.content {
+  margin-left: 200px;
+  padding: 20px;
+  margin-top: -100px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.content img {
+  border: 1px rgb(217, 127, 235) solid;
+}
+.content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px rgb(217, 127, 235) solid;
+  padding: 14px 14px 14px 28px;
+  margin-left: -5px;
+}
+
+.part1,
+.part2 {
+  font-size: 19px;
+  color: #000000;
+  font-family: "BlackOpsOne";
+  margin-left: 420px;
+}
+.part1 span,
+.part2 span {
+  margin-right: 5px;
+}
+.part1 a,
+.part2 a {
+  color: #000000;
+  text-decoration: none;
+}
+.part1 a:hover,
+.part2 a:hover {
+  color: rgb(113, 16, 209);
+}
+
+.part1 {
+  margin-top: 10px;
+}
+
+.part2 {
+  margin-top: 0;
+}
+
+.theme-container {
+  position: fixed;
+  top: 180px;
+  left: 0;
+  width: 190px;
+  height: 220px;
+  border: 1px rgb(217, 127, 235) solid;
+  padding-left: 10px;
+  overflow-y: auto;
+  border-radius: 4px;
+  justify-self: center;
+  background-color: white;
+}
+.theme-container h2 {
+  text-align: center;
+}
+
+.theme-item {
+  display: block;
+  padding: 6px;
+  color: #333;
+  text-decoration: none;
+  margin-left: -10px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.theme-item:hover {
+  border-radius: 3px;
+  width: 170px;
+  margin-left: 2px;
+}
+
+.theme-section {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+}
+.theme-section:first-child {
+  margin-top: 100px;
+}
+.theme-section h1 {
+  font-size: 32px;
+  margin-top: -5px;
+  text-align: center;
+}
+.theme-section ul {
+  border-radius: 8px;
+  border: 1px rgb(217, 127, 235) solid;
+  padding: 14px 14px 14px 28px;
+  margin-left: -5px;
+}
+
+.text-with-image {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.side-img {
+  width: 200px;
+  height: auto;
+  float: right;
+}
+.side-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.side-img figcaption {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.row-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+}
+.row-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid rgb(217, 127, 235);
+}
+.row-img figcaption {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin-top: 5px;
+}
+
+li {
+  font-size: 19px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(113, 16, 209);
+}
+
+@media (max-width: 900px) {
+  header {
+    padding-left: 20px;
+    flex-direction: row;
+    align-items: center;
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+  header h1 {
+    position: static;
+    margin: 0;
+    margin-left: 120px;
+    font-size: 30px;
+  }
+  header img {
+    position: static;
+    margin-top: 0;
+    width: 60px;
+  }
+  header::after {
+    left: 20px;
+    width: calc(100% - 40px);
+    margin: 0;
+  }
+  .part1,
+  .part2 {
+    position: static;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+  .content {
+    margin-left: 20px;
+  }
+  .theme-container {
+    width: calc(100% - 20px);
+    position: static;
+    margin: 0 20px 20px 20px;
+  }
+  .text-with-image {
+    flex-direction: column;
+    align-items: center;
+  }
+  .side-img {
+    float: none;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .row-img {
+    width: 100%;
+    max-width: 200px;
+  }
+}/*# sourceMappingURL=gpu.css.map */

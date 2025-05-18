@@ -4,8 +4,8 @@ $header-hover-color: rgb(226, 139, 232);
 $black: #000000;
 $gray: #333;
 $border-gray: #ccc;
-$font-primary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-$font-theme-item: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$font-primary: Calibri;
+$font-theme-item: 'Trebuchet MS';
 
 @font-face {
     font-family: 'ShareTechMono';
@@ -194,7 +194,7 @@ header {
     float: right;
 
     img {
-        width: 100%;
+        width: 200px;
         height: auto;
         border-radius: 5px;
     }

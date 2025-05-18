@@ -63,7 +63,7 @@ header img {
   margin-left: 200px;
   padding: 20px;
   margin-top: -100px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Calibri;
 }
 .content img {
   border: 1px rgb(217, 127, 235) solid;
@@ -131,7 +131,7 @@ header img {
   margin-left: -10px;
   margin-bottom: 5px;
   font-size: 17px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS";
 }
 .theme-item:hover {
   border-radius: 3px;
@@ -182,7 +182,7 @@ header img {
 }
 .side-img figcaption {
   font-size: 16px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Calibri;
   text-align: center;
   margin-top: 5px;
 }

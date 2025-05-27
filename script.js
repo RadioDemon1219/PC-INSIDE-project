@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     behavior: 'smooth'
                 });
             }
+            if (window.innerWidth <= 900) {
+                document.getElementById('menu__toggle').checked = false;
+            }
         });
     });
 
@@ -25,8 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log('Содержимое абзаца:', paragraphContent.substring(0, 50) + '...');
             const introParagraphDiv = document.getElementById('intro-paragraph');
             if (introParagraphDiv) {
-                introParagraphDiv.appendChild(paragraph);
-            } else {
+                introParagraphDiv.textContent = paragraphContent;
             }
-        })
+        });
 });

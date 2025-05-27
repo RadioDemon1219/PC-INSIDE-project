@@ -171,7 +171,7 @@ header img {
   float: right;
 }
 .side-img img {
-  width: 200px;
+  width: 100%;
   height: auto;
   border-radius: 5px;
 }
@@ -254,9 +254,52 @@ a:hover {
     margin-left: 20px;
   }
   .theme-container {
-    width: calc(100% - 20px);
-    position: static;
-    margin: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    margin: 0;
+    padding: 0px 0 20px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid rgb(217, 127, 235);
+    z-index: 1;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+  .theme-container.menu__box {
+    list-style: none;
+  }
+  .theme-container h2 {
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .theme-container .theme-list {
+    width: 100%;
+    text-align: center;
+  }
+  .theme-item {
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 0.5px solid black;
+    height: 20px;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+  .theme-item:hover {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
   }
   .text-with-image {
     flex-direction: column;
@@ -265,7 +308,7 @@ a:hover {
   .side-img {
     float: none;
     width: 100%;
-    max-width: 200px;
+    max-width: 250px;
     margin: 0 auto;
   }
   .image-row {
@@ -275,5 +318,48 @@ a:hover {
   .row-img {
     width: 100%;
     max-width: 200px;
+  }
+  .menu__btn {
+    display: inline-flex;
+    align-items: center;
+    position: fixed;
+    top: 12px;
+    left: 20px;
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #000000;
+    transition: all 0.3s ease;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .theme-container {
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=gpu.css.map */

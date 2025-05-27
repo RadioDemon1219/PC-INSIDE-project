@@ -9,9 +9,13 @@
 </head>
 
 <body>
-    <header>
+    <header id="theme4">
+        <input type="checkbox" id="menu__toggle" style="display: none; " id="theme4">
+        <label for="menu__toggle" class="menu__btn">
+            <span></span>
+        </label>
         <h1><a href="mainPage.html">PC-INSIDE</a></h1>
-        <a href="mainPage.html"><img src="../photos/LogoPC-INSIDE.svg"></a>
+        <a href="mainPage.html"><img src="../photos/LogoPC-INSIDE.svg" alt="Logo"></a>
         <h4 class="part1">
             <span class="word1"><a href="cpu.html">Центральный процессор</a></span>
             <span class="word2"><a href="gpu.html">Видеокарта</a></span>
@@ -23,15 +27,16 @@
             <span class="word3"><a href="sp.html">Блок питания</a></span>
             <span class="word4"><a href="ssd.html">Твердотельный накопитель</a></span>
         </h4>
-    </header>
-    <div class="theme-container">
-        <h2>Главы</h2>
-        <div class="theme-list">
-            <a href="#theme1" class="theme-item"><b>Введение</b></a>
-            <a href="#theme2" class="theme-item"><b>История</b></a>
-            <a href="#theme3" class="theme-item"><b>Анатомия</b></a>
+        <div class="theme-container menu__box">
+
+            <div class="theme-list">
+                <a href="#theme4" class="theme-item menu__item"><b>Начало</b></a>
+                <a href="#theme1" class="theme-item menu__item"><b>Введение</b></a>
+                <a href="#theme2" class="theme-item menu__item"><b>История</b></a>
+                <a href="#theme3" class="theme-item menu__item"><b>Анатомия</b></a>
+            </div>
         </div>
-    </div>
+    </header>
     <div class="content">
         <section id="theme1" class="theme-section">
             <h1 style="margin-top: 30px;">Материнская плата</h1>

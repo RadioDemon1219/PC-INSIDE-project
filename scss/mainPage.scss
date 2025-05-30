@@ -25,7 +25,7 @@ body {
 header {
     position: relative;
     min-height: 90px;
-    width: 100%;
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -42,7 +42,7 @@ header {
         height: 2px;
         background-color: $primary-color;
         transition: all 0.3s ease;
-        pointer-events: none;
+
     }
 
     &:hover::after {
@@ -329,7 +329,6 @@ a {
 
     .side-img {
         float: none;
-        width: 100%;
         max-width: 250px;
         margin: 0 auto;
     }
@@ -340,7 +339,6 @@ a {
     }
 
     .row-img {
-        width: 100%;
         max-width: 200px;
     }
 

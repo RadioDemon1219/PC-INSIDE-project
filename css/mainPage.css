@@ -14,7 +14,6 @@ body {
 header {
   position: relative;
   min-height: 90px;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -31,7 +30,6 @@ header::after {
   height: 2px;
   background-color: rgb(217, 127, 235);
   transition: all 0.3s ease;
-  pointer-events: none;
 }
 header:hover::after {
   height: 3px;
@@ -286,7 +284,6 @@ a:hover {
   }
   .side-img {
     float: none;
-    width: 100%;
     max-width: 250px;
     margin: 0 auto;
   }
@@ -295,7 +292,6 @@ a:hover {
     align-items: center;
   }
   .row-img {
-    width: 100%;
     max-width: 200px;
   }
   .menu__btn {
